@@ -3,12 +3,12 @@ using UrlsAndRoutes.Models;
 
 namespace UrlsAndRoutes.Controllers
 {
-    public class HomeController : Controller
+    public class AdminController : Controller
     {
         public ViewResult Index() => View("Result",
             new Result
             {
-                Controller = nameof(HomeController),
+                Controller = nameof(AdminController),
                 Action = nameof(Index)
             });
     }
